@@ -1,0 +1,13 @@
+.container {
+  margin: 0;
+  font-family: Helvetica, Arial;
+  font-size: small; }
+
+#nav {
+  float: right; }
+
+#nav li {
+  padding-left: 15px; }
+
+#nav ul {
+  padding-right: 27px; }
