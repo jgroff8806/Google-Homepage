@@ -1,19 +1,36 @@
 .container {
-  font-family: Helvetica, Arial;
+  font-family: Arial, sans-serif;
   font-size: small;
   text-align: center;
 
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
   .nav {
+    position: absolute;
     padding-top: 16px;
     padding-right: 20px;
+    width: 100%;
+
     .topbar {
-      float: right;
+      text-align: right;
       margin: 0 9px;
       color: #404040;
-      font-size: 13px;
+      font-size: 12px;
       list-style-type: none;
+
+      li {
+        display: inline;
+        padding-right: 15px;
       }
-      } // End of .nav
+      }
+    } // End of .nav
 
 // Beginning of .content
   .main {
@@ -56,18 +73,25 @@
 // Beginning of .footer
   .footer {
     background-color: #f2f2f2;
-    font-family: Helvetica, Arial;
-    position: fixed;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 0;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    list-style-type: none;
+    right: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: 40px;
-    bottom: 0px;
+    height: auto;
 
     .left-foot {
-      list-style-type: none;
+      padding-left: 7px;
+      display: inline;
       float: left;
     }
     .right-foot {
-      list-style-type: none;
+      padding-left: 7px;
+      display: inline;
       float: right;
     }
   } // End of .footer
