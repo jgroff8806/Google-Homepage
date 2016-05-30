@@ -4,13 +4,14 @@
   text-align: center; }
   .container a {
     text-decoration: none;
-    color: inherit; }
+    color: #737373; }
   .container a:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #737373; }
   .container .nav {
     position: absolute;
-    padding-top: 16px;
-    padding-right: 20px;
+    top: 15px;
+    left: 0;
     width: 100%; }
     .container .nav .topbar {
       text-align: right;
@@ -18,6 +19,10 @@
       color: #404040;
       font-size: 12px;
       list-style-type: none; }
+      .container .nav .topbar .middle {
+        vertical-align: middle; }
+      .container .nav .topbar .circle-pic {
+        border-radius: 50%; }
       .container .nav .topbar li {
         display: inline;
         padding-right: 15px; }
@@ -26,11 +31,17 @@
     width: 269px;
     padding-top: 112px;
     display: block;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
     clear: both; }
   .container .main .search-box {
     display: block;
+    background-image: url("../images/microphone.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 25px;
+    border: 0.5px solid #D9D9D9;
     height: 30px;
     width: 572px;
     padding-bottom: 0px;
@@ -41,17 +52,19 @@
     margin-top: 30px;
     margin-bottom: 30px; }
   .container .main .button {
-    background-color: #f8f8f8;
-    background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-color: #F4F4F4;
     background-size: auto;
     border: 1px solid #f2f2f2;
     border-radius: 2px;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
-    color: #757575;
-    margin: 11px 4px;
-    padding-top: 8px;
-    padding-bottom: 8px; }
+    color: #737373;
+    margin: 11px 2px;
+    padding: 10px 15px;
+    letter-spacing: 0.5px; }
+    .container .main .button:hover {
+      color: #000;
+      border: 1px solid #D9D9D9; }
   .container .footer {
     background-color: #f2f2f2;
     border-top: 1px solid #e4e4e4;
@@ -59,16 +72,17 @@
     font-family: Arial, sans-serif;
     position: absolute;
     list-style-type: none;
-    right: 0;
+    height: 40px;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: auto; }
+    width: 100%; }
+    .container .footer ul li {
+      padding-bottom: 10px; }
     .container .footer .left-foot {
-      padding-left: 7px;
+      padding-right: 30px;
       display: inline;
       float: left; }
     .container .footer .right-foot {
-      padding-left: 7px;
+      padding-right: 30px;
       display: inline;
       float: right; }
